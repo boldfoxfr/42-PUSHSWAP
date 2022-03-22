@@ -6,7 +6,7 @@
 #    By: agondard <agondard@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/01 13:16:58 by agondard          #+#    #+#              #
-#    Updated: 2022/03/22 06:58:35 by agondard         ###   ########.fr        #
+#    Updated: 2022/03/22 07:00:40 by agondard         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ RM = rm -f
 SRCS_PATH = ./srcs/
 
 SRCS = 1_main.c \
-		2_init.c \
+		2_init_and_free.c \
 		3_errors.c \
 		4_algo.c \
 		5_move_a \

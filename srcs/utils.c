@@ -6,13 +6,13 @@
 /*   By: agondard <agondard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 11:25:56 by agondard          #+#    #+#             */
-/*   Updated: 2022/03/21 21:43:32 by agondard         ###   ########.fr       */
+/*   Updated: 2022/03/22 07:03:25 by agondard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	tab_len(char **tab)
+int			tab_len(char **tab)
 {
 	int	i;
 
@@ -38,4 +38,19 @@ long int	*atoi_tab(char **av, t_data *data)
 		i++;
 	}
 	return(tab);
+}
+
+
+void		free_all(char **tab_str, long int *tab_int)
+{
+	int i;
+
+	i = 0;
+	while (tab_str && tab_str[i])
+	{
+		free(tab_str[i]);
+		i++;
+	}
+	free(tab_str);
+	free(tab_int);
 }

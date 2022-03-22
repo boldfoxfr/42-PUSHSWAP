@@ -6,7 +6,7 @@
 /*   By: agondard <agondard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 11:25:17 by agondard          #+#    #+#             */
-/*   Updated: 2022/03/21 21:43:21 by agondard         ###   ########.fr       */
+/*   Updated: 2022/03/22 07:03:13 by agondard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,4 @@ char	**init_tab(int ac, char **av)
 	tab[i] = NULL;
 	return(tab);
 }
+

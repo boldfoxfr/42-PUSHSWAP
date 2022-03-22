@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   move_both.c                                        :+:      :+:    :+:   */
+/*   7_move_both.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: agondard <agondard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 06:50:16 by agondard          #+#    #+#             */
-/*   Updated: 2022/03/22 06:54:51 by agondard         ###   ########.fr       */
+/*   Updated: 2022/03/22 07:07:39 by agondard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	swap_both(int *a, int *b, t_data *data)
+int	swap_both(int *a, int *b, t_data *data)
 {
 	if (swap_a(a, data) < 0)
 		return (1);

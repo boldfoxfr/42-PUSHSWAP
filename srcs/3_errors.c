@@ -6,25 +6,11 @@
 /*   By: agondard <agondard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 06:41:14 by agondard          #+#    #+#             */
-/*   Updated: 2022/03/22 06:41:18 by agondard         ###   ########.fr       */
+/*   Updated: 2022/03/22 07:01:42 by agondard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
-void	free_all(char **tab_str, long int *tab_int)
-{
-	int i;
-
-	i = 0;
-	while (tab_str && tab_str[i])
-	{
-		free(tab_str[i]);
-		i++;
-	}
-	free(tab_str);
-	free(tab_int);
-}
 
 int	check_doublon(long int *tab, t_data *data)
 {
