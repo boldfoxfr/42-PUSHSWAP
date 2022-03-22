@@ -6,7 +6,7 @@
 /*   By: agondard <agondard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 06:34:37 by agondard          #+#    #+#             */
-/*   Updated: 2022/03/22 07:57:34 by agondard         ###   ########.fr       */
+/*   Updated: 2022/03/22 08:00:06 by agondard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,16 +50,16 @@ int	rotate_a(int *a, t_data *data)
 	return (0);
 }
 
-/* int	reverse_rotate_a(t_data *data)
+int	reverse_rotate_a(int *a, t_data *data)
 {
 	write(1, "rra\n", 3);
 	return (0);
 }
 
-int	push_a(t_data *data)
+int	push_a(int *a, t_data *data)
 {
 	write(1, "pa\n", 3);
 	return (0);
-} */
+}
 
 
