@@ -6,7 +6,7 @@
 /*   By: agondard <agondard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/19 17:57:36 by agondard          #+#    #+#             */
-/*   Updated: 2022/03/21 21:43:16 by agondard         ###   ########.fr       */
+/*   Updated: 2022/03/22 07:50:12 by agondard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int		main(int ac, char **av)
 	else
 		tab_str = init_tab(ac, av);
 	tab_int = atoi_tab(tab_str, &data);
-	if (check_doublon(tab_int, &data) || check_arg(av, tab_str, &data))
+	if (check_doublon(tab_int, &data) || check_arg(av, tab_str, ac))
 	{
 		write(1, "Error\n", 6);
 		free_all(tab_str, tab_int);

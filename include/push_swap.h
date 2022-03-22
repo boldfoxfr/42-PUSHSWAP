@@ -6,7 +6,7 @@
 /*   By: agondard <agondard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/25 23:16:30 by agondard          #+#    #+#             */
-/*   Updated: 2022/03/22 07:38:36 by agondard         ###   ########.fr       */
+/*   Updated: 2022/03/22 07:51:01 by agondard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,11 @@ typedef struct s_data
 	int	size_tab_b;
 }				t_data;
 
-/****** MAIN ****** /
+/****** MAIN ******/
 void		print_tab(char **tab);
 void		print_tab_int(long int *tab, t_data *data);
 
-/******  INITIALISATION && FREE ***** */
+/******  INITIALISATION && FREE ******/
 void		init_struct(t_data *data);
 char		**init_tab(int ac, char **av);
 
