@@ -6,7 +6,7 @@
 /*   By: agondard <agondard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 06:34:37 by agondard          #+#    #+#             */
-/*   Updated: 2022/03/22 07:55:09 by agondard         ###   ########.fr       */
+/*   Updated: 2022/03/22 07:57:34 by agondard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	swap_a(int *a, t_data *data)
 {
-	int tmp;
+	int	tmp;
 
 	if (data == NULL)
 		return (1);
