@@ -6,7 +6,7 @@
 /*   By: agondard <agondard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/25 23:16:30 by agondard          #+#    #+#             */
-/*   Updated: 2022/03/22 07:07:52 by agondard         ###   ########.fr       */
+/*   Updated: 2022/03/22 07:38:36 by agondard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,9 +54,11 @@ void		algo_choice(long int *a, t_data *data);
 /******  MOVE ******/
 /* MOVE A */
 int			swap_a(int *a, t_data *data);
+int			rotate_a(int *a, t_data *data);
 
 /* MOVE B */
 int			swap_b(int *b, t_data *data);
+int			rotate_a(int *b, t_data *data);
 
 /* MOVE BOTH */
 int			swap_both(int *a, int *b, t_data *data);

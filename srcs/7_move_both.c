@@ -6,7 +6,7 @@
 /*   By: agondard <agondard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 06:50:16 by agondard          #+#    #+#             */
-/*   Updated: 2022/03/22 07:07:39 by agondard         ###   ########.fr       */
+/*   Updated: 2022/03/22 07:45:20 by agondard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,17 @@ int	swap_both(int *a, int *b, t_data *data)
 		return (1);
 	swap_b(b, data);
 	write(1, "ss\n", 3);
+	return (0);
+}
+
+int	rotate_both(t_data *data)
+{
+	write(1, "rr\n", 3);
+	return (0);
+}
+
+int	reverse_rotate_both(t_data *data)
+{
+	write(1, "rrr\n", 3);
 	return (0);
 }
