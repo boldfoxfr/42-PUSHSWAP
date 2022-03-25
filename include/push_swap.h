@@ -6,7 +6,7 @@
 /*   By: agondard <agondard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/25 23:16:30 by agondard          #+#    #+#             */
-/*   Updated: 2022/03/22 07:51:01 by agondard         ###   ########.fr       */
+/*   Updated: 2022/03/25 15:23:35 by agondard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,8 @@ typedef struct s_data
 }				t_data;
 
 /****** MAIN ******/
-void		print_tab(char **tab);
-void		print_tab_int(long int *tab, t_data *data);
+void	print_tab(int *tab, t_data *data);
+void	print_tab_int(long int *tab, t_data *data);
 
 /******  INITIALISATION && FREE ******/
 void		init_struct(t_data *data);
@@ -55,13 +55,19 @@ void		algo_choice(long int *a, t_data *data);
 /* MOVE A */
 int			swap_a(int *a, t_data *data);
 int			rotate_a(int *a, t_data *data);
+int			reverse_rotate_a(int *a, t_data *data);
+void		push_a(int *a, int *b, t_data *data);
 
 /* MOVE B */
 int			swap_b(int *b, t_data *data);
-int			rotate_a(int *b, t_data *data);
+int			rotate_b(int *b, t_data *data);
+int			reverse_rotate_b(int *b, t_data *data);
+void		push_b(int *a, int *b, t_data *data);
 
 /* MOVE BOTH */
 int			swap_both(int *a, int *b, t_data *data);
+int			rotate_both(int *a, int *b, t_data *data);
+int			reverse_rotate_both(int *a, int *b, t_data *data);
 
 /******  UTILS ******/
 int			tab_len(char **tab);

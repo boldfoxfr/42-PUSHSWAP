@@ -6,7 +6,7 @@
 /*   By: agondard <agondard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/31 11:59:19 by agondard          #+#    #+#             */
-/*   Updated: 2022/03/21 21:17:53 by agondard         ###   ########.fr       */
+/*   Updated: 2022/03/25 15:34:36 by agondard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ size_t	ft_word_len(const char *str, char c)
 	return (i);
 }
 
-void	**ft_free(char **str)
+char	**ft_free(char **str)
 {
 	size_t	i;
 

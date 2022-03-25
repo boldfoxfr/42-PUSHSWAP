@@ -6,19 +6,19 @@
 /*   By: agondard <agondard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/19 17:57:36 by agondard          #+#    #+#             */
-/*   Updated: 2022/03/22 07:50:12 by agondard         ###   ########.fr       */
+/*   Updated: 2022/03/25 16:03:12 by agondard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	print_tab(char **tab)
+void	print_tab(int *tab, t_data *data)
 {
 	int	i = 0;
 
-	while (tab[i])
+	while (i < data->size_tab_a)
 	{
-		printf("%s\n", tab[i]);
+		printf("%d\n", tab[i]);
 		i++;
 	}
 }
@@ -52,7 +52,6 @@ int		main(int ac, char **av)
 		free_all(tab_str, tab_int);
 		return(1);
 	}
-	print_tab(tab_str);
-	print_tab_int(tab_int, &data);
-	return(0);
+	algo_choice(tab_int, &data);
+	return (0);
 }

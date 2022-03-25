@@ -6,7 +6,7 @@
 /*   By: agondard <agondard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 06:40:54 by agondard          #+#    #+#             */
-/*   Updated: 2022/03/22 07:52:25 by agondard         ###   ########.fr       */
+/*   Updated: 2022/03/25 16:06:37 by agondard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,13 +46,17 @@ int find_min(int *a, t_data *data)
 	return (tmp);
 }
 
-/* void	algo_choice(long int *a, t_data	*data)
+void	algo_choice(long int *a, t_data	*data)
 {
-	int *b;
+	//int *b;
 	int *new_a;
 
 	new_a = long_to_int(a, data);
-	b = malloc(sizeof(int) * data->size_tab);
+
+	reverse_rotate_a(new_a, data);
+
+	print_tab(new_a, data);
+/* 	b = malloc(sizeof(int) * data->size_tab);
 	if (!b)
 		return ;
 	data->min = find_min(new_a, data);
@@ -66,4 +70,4 @@ int find_min(int *a, t_data *data)
 
 	free(new_a);
 	free(b);
-} */
+ */}
