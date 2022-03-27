@@ -6,7 +6,7 @@
 /*   By: agondard <agondard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 11:25:17 by agondard          #+#    #+#             */
-/*   Updated: 2022/03/22 07:03:13 by agondard         ###   ########.fr       */
+/*   Updated: 2022/03/25 18:19:27 by agondard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ void	init_struct(t_data *data)
 	data->size_tab_a = 0;
 	data->size_tab_b = 0;
 	data->min = 0;
+	data->max = 0;
 }
 
 char	**init_tab(int ac, char **av)

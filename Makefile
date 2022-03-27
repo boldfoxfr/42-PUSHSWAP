@@ -6,7 +6,7 @@
 #    By: agondard <agondard@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/01 13:16:58 by agondard          #+#    #+#              #
-#    Updated: 2022/03/25 15:21:40 by agondard         ###   ########.fr        #
+#    Updated: 2022/03/26 10:30:38 by agondard         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,7 @@ SRCS = 1_main.c \
 		2_init.c \
 		3_errors.c \
 		4_algo.c \
+		4bis_algo_utils.c \
 		5_move_a.c \
 		6_move_b.c \
 		7_move_both.c \
