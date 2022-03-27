@@ -6,7 +6,7 @@
 /*   By: agondard <agondard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 19:16:44 by agondard          #+#    #+#             */
-/*   Updated: 2022/03/26 17:05:55 by agondard         ###   ########.fr       */
+/*   Updated: 2022/03/27 19:01:04 by agondard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int find_min(int *a, t_data *data)
 
 	i = data->min;
 	tmp = a[i];
-	while (i < data->size_tab_a )
+	while (i < data->size_tab_a)
 	{
 		if (tmp > a[i])
 			tmp = a[i];
@@ -46,18 +46,30 @@ int find_min(int *a, t_data *data)
 	return (tmp);
 }
 
-int find_max(int *a, t_data *data)
+int		first_min(int *a, t_data *data)
 {
-	int i;
-	int tmp;
+	int	i;
 
-	i = 0;
-	tmp = a[i];
-	while (i < data->size_tab_a )
+	i = 1;
+	while (i < data->size_tab_a)
 	{
-		if (tmp < a[i])
-			tmp = a[i];
+		if (a[0] > a[i])
+			return (1);
 		i++;
 	}
-	return (tmp);
+	return (0);
+}
+
+int		reverse_min(int *a, t_data *data)
+{
+	int	i;
+
+	i = 0;
+	while (i < data->size_tab_a - 1)
+	{
+		if (a[data->size_tab_a - 1] > a[i])
+			return (1);
+		i++;
+	}
+	return (0);
 }

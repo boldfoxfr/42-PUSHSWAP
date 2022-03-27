@@ -6,7 +6,7 @@
 /*   By: agondard <agondard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 06:40:54 by agondard          #+#    #+#             */
-/*   Updated: 2022/03/27 10:03:28 by agondard         ###   ########.fr       */
+/*   Updated: 2022/03/27 19:01:08 by agondard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,64 +39,27 @@ void	for_3(int *a, t_data *data)
 		reverse_rotate_a(a, data);
 }
 
-int		min_index(int *a, t_data *data)
+void	for_5(int *a, int *b, t_data *data)
 {
 	int i;
 
-	i = 1;
-	while (i < data->size_tab_a)
+	i = 0;
+	while (data->size_tab_a != 3)
 	{
-		if (data->min > a[i])
-			data->min = a[i];
-		i++;
-	}
-	return (i);
-}
-
-void	for_4_topmin(int *a, int *b, t_data *data)
-{
-	push_b(a, b, data);
-	for_3(a, data);
-	push_a(a, b, data);
-}
-
-void	for_4(int *a, int *b, t_data *data)
-{
-	int min;
-	int min_i;
-
-	min = find_min(a, data);
-	min_i = min_index(&min, data);
-	if (min_i == 4)
-		reverse_rotate_a(a, data);
-	else
-	{
-		while ((min_i--) != 1)
-			rotate_a(a, data);
-	}
-	for_4_topmin(a, b, data);
-}
-
-void	for_5(int *a, int *b, t_data *data)
-{
-	int	min;
-	int	min_i;
-
-	min = find_min(a, data);
-	min_i = min_index(&min, data);;
-	if (min_i > 3)
-	{
-		while ((min_i++) != 6)
+		if (first_min(a, data) == 0)
+			push_b(a, b, data);
+		if (reverse_min(a, data) == 0)
 			reverse_rotate_a(a, data);
-	}
-	else
-	{
-		while ((min_i--) != 1)
+		else
 			rotate_a(a, data);
 	}
-	push_b(a, b, data);
-	for_4(a, b, data);
-	push_a(a, b, data);
+	for_3(a, data);
+	while (data->size_tab_b != 0)
+	{
+		if (b[0] < b[i])
+			swap_b(b, data);
+		push_a(a, b, data);
+	}
 }
 
 void	algo_choice(long int *a, t_data	*data)
@@ -109,8 +72,6 @@ void	algo_choice(long int *a, t_data	*data)
 	if (!b)
 		return ;
 	data->min = find_min(new_a, data);
-	data->max = find_max(new_a, data);
-
 	if (data->size_tab_a <= 3)
 	{
 		if (data->size_tab_a == 2)
@@ -119,7 +80,7 @@ void	algo_choice(long int *a, t_data	*data)
 			for_3(new_a, data);
 	}
 	else if (data->size_tab_a <= 5)
-		for_4(new_a, b, data);
+		for_5(new_a, b, data);
 	print_tab(new_a, data);
 	free(new_a);
 	free(b);

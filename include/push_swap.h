@@ -6,7 +6,7 @@
 /*   By: agondard <agondard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/25 23:16:30 by agondard          #+#    #+#             */
-/*   Updated: 2022/03/27 09:35:17 by agondard         ###   ########.fr       */
+/*   Updated: 2022/03/27 18:55:56 by agondard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,9 @@ typedef struct s_data
 	int	min;
 	int	mid;
 	int	max;
-	int	size_tab;
+	int reverse_a;
+	int reverse_b;
+	int size_tab;
 	int	size_tab_a;
 	int	size_tab_b;
 }				t_data;
@@ -51,13 +53,12 @@ int			*long_to_int(long int *a, t_data *data);
 void		algo_choice(long int *a, t_data *data);
 void		for_2(int *a, t_data *data);
 void		for_3(int *a, t_data *data);
-void for_4(int *a, int *b, t_data *data);
-
-void for_5(int *a, int *b, t_data *data);
+//void for_5(int *a, int *b, t_data *data);
 
 /******  ALGO UTILS ******/
 int			find_min(int *a, t_data *data);
-int			find_max(int *a, t_data *data);
+int			first_min(int *a, t_data *data);
+int			reverse_min(int *a, t_data *data);
 
 /******  MOVE ******/
 /* MOVE A */
