@@ -6,7 +6,7 @@
 /*   By: agondard <agondard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/25 23:16:30 by agondard          #+#    #+#             */
-/*   Updated: 2022/03/27 18:55:56 by agondard         ###   ########.fr       */
+/*   Updated: 2022/03/27 19:19:36 by agondard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,7 @@ void		for_3(int *a, t_data *data);
 
 /******  ALGO UTILS ******/
 int			find_min(int *a, t_data *data);
+int			find_max(int *a, t_data *data);
 int			first_min(int *a, t_data *data);
 int			reverse_min(int *a, t_data *data);
 
